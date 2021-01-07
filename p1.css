@@ -1,0 +1,236 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body{
+    position: relative;
+}
+
+.header{
+
+}
+
+.author{
+    font-size: 20px;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+}
+
+.clrchange {
+    color:seagreen;
+}
+
+#nav{
+   position: absolute;
+   top: 5%;
+   right: 15%;
+}
+
+#nav button{
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+
+
+.active, .btn:hover {
+    border-bottom: green solid 3px;
+    
+}
+
+#home_body{
+    
+    width: 900px;
+    height: 600px;
+    border: black 1px solid;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 2px 5px 2px grey;
+    margin-top: 100px;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+.topbody{
+    display: flex;
+    justify-content: center;
+    height: 320px;
+    width: 900px;
+    background-color: lightgreen;
+    border-radius: 15px 15px 0 0 ;
+}
+
+.icon{
+    border-radius: 50%;
+    background-color: white;
+    padding: 8px;
+}
+
+
+
+.topbody_pic{
+    border: 3px solid white;
+    position: relative;
+    top: 23%;
+    left: 22%;
+    box-shadow: 0 2px 5px 2px grey;
+}
+
+.topbody_info{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 30%;
+    right: 5%;
+}
+
+.bottombody{
+    display: flex;
+    justify-content: center;
+}
+
+.bottombody > div {
+    background-color: white;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.aboutme{
+    word-break: keep-all;
+    margin-left: 20px;
+}
+.bottombody_title{
+    font-size: 25px;
+}
+
+
+
+#resume_body{
+    width: 900px;
+    height: 1050px;
+    border: black 1px solid;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 2px grey;
+    margin-top: 100px;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+.resume_title{
+    width: 900px;
+    height: 150px;
+    background-color:lightgreen;
+    color: white;
+    text-align: center;
+    border-radius: 15px 15px 0 0 ;
+    font-size: 25px;
+    
+}
+
+.resume_info{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 50px;
+   
+}
+
+.resume_info_body{
+    flex: 50%;
+    
+}
+
+.resume_info_title{
+    margin-left: 30px;
+}
+
+.resume_card{
+    box-shadow: 0 2px 5px 2px grey;
+    height: 150px;
+    width: 360px;
+    margin: 10px 10px 30px 18px;
+    border-left: 2px solid green;
+    position: relative;
+}
+
+.resume_bigcard{
+    width: 450;
+    border-left: grey solid 2px;
+    
+}
+
+.resume_card::before{
+    content: "";
+    display: block;
+    width: 15px;
+    border-top: 2px solid green;
+    position: absolute;
+    top: 30%;
+    right: 100%;
+
+}
+
+.resume_card::after{
+    content: "";
+    display: block;
+    border-radius: 50%;
+    border: green 2px solid;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 30%;
+    right: calc(100% + 15px);
+    transform: translateY(-35%);
+    background-color: white;
+}
+
+
+.resume_skill_title{
+    font-size: 25px;
+    flex: 100%;
+    margin-top: 20px;
+}
+
+.resume_skill_bar{
+    width: 300px;
+    height: 10px;
+    background-color: grey;
+    position: relative;
+}
+
+.resume_skill_bar2{
+    width: 200px;
+    height: 10px;
+    background-color: dodgerblue;
+    position: absolute;
+}
+
+.resume_skill_bar3{
+    width: 280px;
+    height: 10px;
+    background-color: dodgerblue;
+    position: absolute;
+}
+
+.resume_skill_bar4{
+    width: 250px;
+    height: 10px;
+    background-color: dodgerblue;
+    position: absolute;
+}
+
+.footer{
+    position:absolute;
+    bottom: 5%;
+}
