@@ -32,7 +32,7 @@ body {
 }
 
 .clrchange {
-  color: seagreen;
+  color: #00cc88;
 }
 
 #nav {
@@ -42,7 +42,7 @@ body {
  
 }
 
-#nav button {
+#nav li {
   float: left;
   display: block;
   text-align: center;
@@ -53,6 +53,7 @@ body {
 .active,
 .btn:hover {
   border-bottom: green solid 3px;
+ 
 }
 
 
@@ -159,7 +160,7 @@ body {
 
 .linkstyle {
   text-decoration: none;
-  color: seagreen;
+  color: #00cc88;
 }
 
 #resume_body {
@@ -179,7 +180,7 @@ body {
 }
 
 .resume_title_font{
-  padding-top: 35px;
+  padding-top: 5px;
 }
 
 .resume_info {
@@ -257,21 +258,21 @@ body {
 .resume_skill_bar2 {
   width: 200px;
   height: 10px;
-  background-color: green;
+  background-color: #00cc88;
   position: absolute;
 }
 
 .resume_skill_bar3 {
   width: 280px;
   height: 10px;
-  background-color: green;
+  background-color: #00cc88;
   position: absolute;
 }
 
 .resume_skill_bar4 {
   width: 250px;
   height: 10px;
-  background-color: green;
+  background-color: #00cc88;
   position: absolute;
 }
 
@@ -350,7 +351,7 @@ body {
 }
 
 #contact_info_body_map{
-  width: 100%;
+  width: 400px;
   height: 200px;
   margin: 50px 30px 60px 50px;
 }
@@ -366,6 +367,69 @@ body {
   border-radius: 50%;
   background-color:  rgb(240,240,240);
   padding: 5px;
+}
+
+.contact_info_body_form{
+  margin-left: 20px;
+}
+
+
+.col-10 img{
+  width: 15px;
+  height: 15px;
+}
+
+.col-10{
+  float: left;
+  width: 8%;
+  background-color:#F5F5F5 ;
+  padding: 10px;
+}
+
+.col-90{
+  float: left;
+  width: 92%;
+  
+}
+
+.col-message{
+  float: left;
+  width: 8%;
+  background-color:#F5F5F5;
+  padding: 10px 10px 61.5px 10px;
+}
+
+.col-message img{
+  width: 15px;
+  height: 15px;
+}
+
+.row{
+  
+  padding: 40px;
+
+}
+
+.col-90 input[type=text] {
+  padding: 11.5px;
+  width: 330px;
+  border: none;
+  border-bottom: 2px solid #D8D8D8;
+}
+
+.col-90 textarea{
+  border: none;
+  width: 330px;
+  border-bottom: 2px solid #D8D8D8;
+  padding: 30px;
+  margin-bottom: 60px;
+}
+
+.row input[type=submit]{
+  margin-top: 30px;
+  padding: 10px;
+  background-color: #00cc88 ;
+  color: white;
 }
 
 .footer {
