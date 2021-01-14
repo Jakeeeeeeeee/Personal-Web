@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  background-image: url(../img/mainbackground.jpg);
+  background-size: cover;
+  height: auto;
+}
+
+
+
+.header{
+  height: 100px;
+  width: 100%;
+  
+  display: flex;
+  justify-content: center;
+  position: sticky;
+}
+
+.author {
+  font-size: 20px;
+  position: absolute;
+  margin-right: 900px;
+  top: 30%;
+}
+
+.clrchange {
+  color: seagreen;
+}
+
+#nav {
+  position: absolute;
+  margin-left: 600px;
+  top: 20%;
+ 
+}
+
+#nav button {
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+
+.active,
+.btn:hover {
+  border-bottom: green solid 3px;
+}
+
+
+.main {
+  width: 1000px;
+  margin-top: 100px;
+  position: absolute;
+  top: 10%;
+}
+
+
+#home_body {
+  
+  border: rgba(0, 0, 0, 0.2) 1px solid;
+  border-radius: 15px;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
+  
+  
+}
+
+.home_body_top {
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/background.jfif") ;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+  height: 320px;
+}
+
+
+
+.topbody_pic {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  position: relative;
+  top: 23%;
+  left: 22%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: grey;
+}
+
+.topbody_pic:hover{
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+  top: 21%;
+}
+
+.home_body_top-info {
+  text-align: center;
+  color: white;
+  margin-top: 100px;
+  margin-right: 50px;
+  
+}
+
+.author_name{
+  margin-bottom: 20px;
+}
+
+.icon {
+  border-radius: 50%;
+  background-color: white;
+  padding: 8px;
+  margin-top: 20px;
+  width:"35px";
+  height:"35px";
+}
+
+.icon:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.home_body_bottom {
+  display: flex;
+  justify-content: center;
+  margin:20px;
+  
+}
+
+.home_body_bottom > div {
+  background-color: white;
+ 
+  
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home_body_bottom_aboutme {
+  word-break: keep-all;
+  margin-left: 20px;
+  width: 350px;
+}
+.home_body_bottom_title {
+  font-size: 25px;
+}
+.mar{
+  margin-top: 20px;
+}
+
+.home_body_bottom_detail{
+  margin-left: 60px;
+}
+
+.linkstyle {
+  text-decoration: none;
+  color: seagreen;
+}
+
+#resume_body {
+  border:  rgba(0, 0, 0, 0.2) 1px solid;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px 2px  rgba(0, 0, 0, 0.2);
+}
+
+.resume_title {
+  height: 120px;
+  color: white;
+  text-align: center;
+  border-radius: 15px 15px 0 0;
+  font-size: 25px;
+  background-image: url("../img/background.jfif") ;
+  background-size: cover;
+}
+
+.resume_title_font{
+  padding-top: 35px;
+}
+
+.resume_info {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 50px;
+  background-color: white;
+}
+
+.resume_info_body {
+  flex: 50%;
+  margin-top: 30px;
+}
+
+.resume_info_title {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.resume_card {
+  box-shadow: 0 2px 5px 2px  rgba(0, 0, 0, 0.2);
+  height: 150px;
+  width: 360px;
+  margin: 10px 10px 30px 18px;
+  border-left: 2px solid green;
+  position: relative;
+}
+
+.resume_card:hover{
+  box-shadow: 0 4px 10px 4px  rgba(0, 0, 0, 0.2);
+}
+
+.resume_bigcard {
+  width: 450;
+  border-left:  rgba(0, 0, 0, 0.2) solid 2px;
+}
+
+.resume_card::before {
+  content: "";
+  display: block;
+  width: 15px;
+  border-top: 2px solid green;
+  position: absolute;
+  top: 30%;
+  right: 100%;
+}
+
+.resume_card::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  border: green 2px solid;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 30%;
+  right: calc(100% + 15px);
+  transform: translateY(-35%);
+  background-color: white;
+}
+
+.resume_skill_title {
+  font-size: 25px;
+  flex: 100%;
+  margin-top: 20px;
+}
+
+.resume_skill_bar {
+  width: 300px;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.resume_skill_bar2 {
+  width: 200px;
+  height: 10px;
+  background-color: green;
+  position: absolute;
+}
+
+.resume_skill_bar3 {
+  width: 280px;
+  height: 10px;
+  background-color: green;
+  position: absolute;
+}
+
+.resume_skill_bar4 {
+  width: 250px;
+  height: 10px;
+  background-color: green;
+  position: absolute;
+}
+
+
+#service_body{
+    border:  rgba(0, 0, 0, 0.2) 1px solid;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px 2px  rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+.service_info{
+  font-size: 25px;
+  margin: 50px 0 30px 50px;
+}
+
+.service_info_body{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.service_info_body_card{
+  flex: 28%;
+  margin: 20px;
+  
+}
+
+.service_info_body_pic img{
+  border-radius: 50%;
+  width: 130px;
+  height: 100px;
+}
+
+.service_info_body_pic img:hover{
+  box-shadow: 0 2px 5px 2px  rgba(0, 0, 0, 0.2);
+}
+
+.service_info_body_pic{
+  padding-left: 80px;
+}
+
+.service_info_body_text{
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+#project_body{
+  border:  rgba(0, 0, 0, 0.2) 1px solid;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px 2px  rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+
+#contact_body{
+  border:  rgba(0, 0, 0, 0.2) 1px solid;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px 2px  rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+.contact_info{
+  display: flex;
+}
+
+.contact_info_body{
+  flex: 50%;
+  margin-bottom: 70px;
+}
+
+.contact_info_body_title{
+  margin: 50px 0 30px 50px;
+  font-size: 25px;
+}
+
+#contact_info_body_map{
+  width: 100%;
+  height: 200px;
+  margin: 50px 30px 60px 50px;
+}
+
+.contact_info_body_icon{
+  margin: 30px 0 30px 50px;
+}
+
+.contact_info_body_icon img{
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+  border-radius: 50%;
+  background-color:  rgb(240,240,240);
+  padding: 5px;
+}
+
+.footer {
+  
+  
+  
+}

@@ -1,183 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="p1.js" defer></script>
-    <link rel="stylesheet" href="p1.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/p1.js" defer></script>
+    <link rel="stylesheet" href="css/p1.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    
+  </head>
 
-<script>
-    var header = document.getElementById("nav");
-var btns = header.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
-}
+  <script></script>
 
-</script>
+  <body>
 
-<body>
+
     <div class="header">
-        <div class="author">
-            <span>Jake</Span>
-            <span class="clrchange">Yang</span>
-        </div>
+      <div class="author">
+        <span>Jake</span>
+        <span class="clrchange">Yang</span>
+      </div>
+
+      <div id="nav">
+        <button class="btn active" onclick="home()">Home</button>
+        <button class="btn" onclick="resume()">Resume</button>
+        <button class="btn">Services</button>
+        <button class="btn">Project</button>
+        <button class="btn">Contact</button>
+      </div>
     
-        
-
-
-        <div id="nav">
-            
-                <button class="btn active" onclick="home()">Home</button>
-                <button class="btn"  onclick="resume()">Resume</button>
-                <button class="btn">Services</button>
-                <button class="btn">Blog</button>
-                <button class="btn">Contact</button>
-            
-        </div>
     </div>
 
-    <div id="home_body" >
-        <div class="topbody">
-            <div style="flex-grow: 4">
-                <img class="topbody_pic"  src="img/work.svg" alt="Jake" width="270px" style="background-color: white;">
-            </div>
-            
-            <div style="flex-grow: 8" class="topbody_info">
-                <h1>Jake Yang</h1>
-            
-                <h3>Web Developer</h3>
-            
-                <img class="icon" src="img/facebook.svg" alt="facebook" width="35px" height="35px">
-                <img class="icon" src="img/linkedin.svg" alt="Linkedin" width="35px" height="35px">
-            </div>
+    <div class="main">
+    <div id="home_body">
+      <div class="home_body_top">
+        <div style="flex-grow: 4">
+          <img
+            class="topbody_pic"
+            src="img/work.svg"
+            alt="Jake"
+            width="270px"
+            height="auto"
+            style="background-color: white"
+          />
+
         </div>
-        
 
-        <div class="bottombody">
-            <div class="aboutme"  style="flex-grow: 5">
-                <div class="bottombody_title">
-                    <span>About</span>
-                    <span class="clrchange">Me</span>
-                </div>
-                <p>Hello! I am Jake. sdfsf scsdf ecas ceace fdsf ceafce fda cdsa sdjl skdjfl sdf asdf lkjl adj lajd lj a djla asdkjf lkj </p>
-            </div>
-            <div style="flex-grow: 2">
-                <p>Age</p>
-                <p>Address</p>
-                <p>E-mail</p>
-                <p>Phone</p>
-            </div>
-            <div style="flex-grow: 5">
-                <p>29</p>
-                <p>Hawthorn, Melbourne, Vic </p>
-                <a href="yangjinchen1995@gmail.com">yangjinchen1995@gmail.com</a>
-                <p>+61 420 660 1500</p>
-            </div>
-        </div>
-    </div>
+        <div style="flex-grow: 8" class="home_body_top-info">
+          <h1 class="author_name">Jake Yang</h1>
 
-    <div id="resume_body" style="display: none;">
-        <div class="resume_title">
-            <h1>Resume</h1>
-        </div>
-        <div class="resume_info">
-            <div class="resume_info_body">
-                <h3 class="resume_info_title">Education</h3>
-                <div class="resume_bigcard">
-                
-                    <div class="resume_card">
+          <h6>Web Developer</h6>
 
-                    </div>
-                    <div class="resume_card">
-
-                    </div>
-                    <div class="resume_card">
-
-                    </div>
-                </div>
-            </div>
-
+          <img
+            class="icon"
+            src="img/facebook.svg"
+            alt="facebook"
             
-            <div class="resume_info_body">
-                <h3 class="resume_info_title">Exprience</h3>
-                <div class="resume_bigcard">
-                    <div class="resume_card">
-
-                    </div>
-                    <div class="resume_card">
-
-                    </div>
-                    <div class="resume_card">
-
-                    </div>
-                </div>
-            </div>
-            
-                
-            <div class="resume_skill_title">
-                <span>Coding</span>
-                <span class="clrchange">SKills</span>
-            </div>
-               
-            <div class="resume_info_body">
-                <p>HTML5</p>
-                <div class="resume_skill_bar"> 
-                    <div class="resume_skill_bar3">
-
-                    </div>
-                </div>
-                
-                <p>Css3</p>
-                <div class="resume_skill_bar"> 
-                    <div class="resume_skill_bar4">
-
-                    </div>
-                </div>
-                
-                <p>Javascript</p>
-                <div class="resume_skill_bar"> 
-                    <div class="resume_skill_bar2">
-
-                    </div>
-                </div>
-                
-            </div>
-           
-
-            <div class="resume_info_body">
-                <p>HTML5</p>
-                <div class="resume_skill_bar"> 
-                    <div class="resume_skill_bar3">
-
-                    </div>
-                </div>
-                <p>Css3</p>
-                <div class="resume_skill_bar"> 
-                    <div class="resume_skill_bar4">
-
-                    </div>
-                </div>
-                <p>Javascript</p>
-                <div class="resume_skill_bar"> 
-                    <div class="resume_skill_bar2">
-
-                    </div>
-                </div>
-            </div>
-                
-            
-        </div>
-    </div>
-
-
-        <div class="footer">
-            <p>Design by <a href="yangjinchen1995@gmail.com">Jake Yang</a></p>
-        </div>
+          />
+          <img
+            class="icon"
+            src="img/linkedin.svg"
+            alt="Linkedin"
     
-</body>
+          />
+          <img
+            class="icon"
+            src="img/instagram.svg"
+            alt="Linkedin"
+            
+          />
+        </div>
+      </div>
+
+      <div class="home_body_bottom">
+        <div class="home_body_bottom_aboutme" style="flex-grow: 6">
+          <div class="home_body_bottom_title">
+            <span>About</span>
+            <span class="clrchange">Me</span>
+          </div>
+          <p>
+            Hello! I am Jake. sdfsf scsdf ecas ceace fdsf ceafce fda cdsa sdjl
+            skdjfl sdf asdf lkjl adj lajd lj a djla asdkjf lkj
+          </p>
+        </div>
+        <div class="home_body_bottom_detail" style="flex-grow: 2">
+          <p>Age</p>
+          <p>Address</p>
+          <p>E-mail</p>
+          <p>Phone</p>
+        </div>
+        <div style="flex-grow: 4">
+          <p>25</p>
+          <p>Hawthorn, Melbourne, Vic</p>
+          
+          <a class="linkstyle"  href="yangjinchen1995@gmail.com">yangjinchen1995@gmail.com</a>  
+        <div class="mar">
+          <p>+61 420 660 1500</p>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="resume_body" style="display: none">
+      <div class="resume_title">
+        <div class="resume_title_font">
+        <h1 >Resume</h1>
+      </div>
+      </div>
+      <div class="resume_info">
+        <div class="resume_info_body">
+          <h3 class="resume_info_title">Education</h3>
+          <div class="resume_bigcard">
+            <div class="resume_card"></div>
+            <div class="resume_card"></div>
+            <div class="resume_card"></div>
+          </div>
+        </div>
+
+        <div class="resume_info_body">
+          <h3 class="resume_info_title">Exprience</h3>
+          <div class="resume_bigcard">
+            <div class="resume_card"></div>
+            <div class="resume_card"></div>
+            <div class="resume_card"></div>
+          </div>
+        </div>
+
+        <div class="resume_skill_title">
+          <span>Coding</span>
+          <span class="clrchange">SKills</span>
+        </div>
+
+        <div class="resume_info_body">
+          <p>HTML5</p>
+          <div class="resume_skill_bar">
+            <div class="resume_skill_bar3"></div>
+          </div>
+
+          <p>Css3</p>
+          <div class="resume_skill_bar">
+            <div class="resume_skill_bar4"></div>
+          </div>
+
+          <p>Javascript</p>
+          <div class="resume_skill_bar">
+            <div class="resume_skill_bar2"></div>
+          </div>
+        </div>
+
+        <div class="resume_info_body">
+          <p>HTML5</p>
+          <div class="resume_skill_bar">
+            <div class="resume_skill_bar3"></div>
+          </div>
+          <p>Css3</p>
+          <div class="resume_skill_bar">
+            <div class="resume_skill_bar4"></div>
+          </div>
+          <p>Javascript</p>
+          <div class="resume_skill_bar">
+            <div class="resume_skill_bar2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="service_body">
+      <div class="resume_title">
+        <div class="resume_title_font">
+          <h1>Services</h1>
+        </div>
+      </div>
+
+      <div class="service_info">
+        <span>My</span>
+            <span class="clrchange">Services</span>
+      </div>
+
+      <div class="service_info_body">
+        <div class="service_info_body_card">
+          <div class="service_info_body_pic">
+            <img src="img/html.png" alt="html" >
+          </div>
+          <div class="service_info_body_text">
+            <h5>HTML 5</h5>
+            <p>This is the html5This is the html5This is the html5This is the html5</p>
+          </div>
+        </div>
+
+        <div class="service_info_body_card">
+          <div class="service_info_body_pic">
+            <img src="img/css.jfif" alt="css">
+          </div>
+          <div class="service_info_body_text">
+            <h5>HTML 5</h5>
+            <p>This is the html5This is the html5This is the html5This is the html5</p>
+          </div>
+        </div>
+
+        <div class="service_info_body_card">
+          <div class="service_info_body_pic">
+            <img src="img/js.jfif" alt="javascript">
+          </div>
+          <div class="service_info_body_text">
+            <h5>HTML 5</h5>
+            <p>This is the html5This is the html5This is the html5This is the html5</p>
+          </div>
+        </div>
+
+        <div class="service_info_body_card">
+          <div class="service_info_body_pic"> 
+            <img src="img/bootstrap.jfif" alt="bootstrap">
+          </div>
+          <div class="service_info_body_text">
+            <h5>HTML 5</h5>
+            <p>This is the html5This is the html5This is the html5This is the html5</p>
+          </div>
+        </div>
+
+        <div class="service_info_body_card">
+          <div class="service_info_body_pic">
+            <img src="img/react.jfif" alt="react">
+          </div>
+          <div class="service_info_body_text">
+            <h5>HTML 5</h5>
+            <p>This is the html5This is the html5This is the html5This is the html5</p>
+          </div>
+        </div>
+
+        <div class="service_info_body_card">
+          <div class="service_info_body_pic">
+            <img src="img/java.jfif" alt="java">
+          </div>
+          <div class="service_info_body_text">
+            <h5>HTML 5</h5>
+            <p>This is the html5This is the html5This is the html5This is the html5</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="project_body">
+      <div class="resume_title">
+        <div class="resume_title_font">
+          <h1>Project</h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact_body">
+      <div class="resume_title">
+        <div class="resume_title_font">
+          <h1>Contact</h1>
+        </div>
+      </div>
+
+      <div class="contact_info">
+        <div class="contact_info_body">
+          <div class="contact_info_body_title">
+              <span>Get in</span>
+              <span class="clrchange">Touch</span>
+          </div>
+          <div id="contact_info_body_map"></div>
+
+          <div class="contact_info_body_icon">  
+              <span> 
+                <img src="img/address.svg" alt="address">
+              </span>
+              <span>
+                Melbourne, Australia
+              </span>
+          </div>
+
+          <div class="contact_info_body_icon">  
+            <span> 
+              <img src="img/email.svg" alt="email">
+            </span>
+            <span>
+              yangjinchen1995@gmail.com
+            </span>
+        </div>
+
+        <div class="contact_info_body_icon">  
+          <span> 
+            <img src="img/phone.svg" alt="phone">
+          </span>
+          <span>
+            +61 426 660 1500
+          </span>
+      </div>
+
+      <div class="contact_info_body_icon">  
+        <span> 
+          <img src="img/correct.svg" alt="available">
+        </span>
+        <span>
+          Freelance available
+        </span>
+    </div>
+        </div>
+
+        <div class="contact_info_body">
+          <div class="contact_info_body_title">
+              <span>Contact</span>
+              <span class="clrchange">Form</span>
+          </div>
+      </div>
+    </div>
+
+
+
+    </div>
+
+    
+  
+    <!--
+    <div class="footer">
+      
+      <p>Design by <a href="yangjinchen1995@gmail.com">Jake Yang</a></p>
+      
+    </div>
+  -->
+  
+  </body>
 </html>
