@@ -1,17 +1,53 @@
-//function resume(){
-   // document.getElementById("home_body").style.display = "none";
-   // document.getElementById("resume_body").style.display ="block";
-//}
+//document.getElementById("home_body").style.display = "none";
+//document.getElementById("resume_body").style.display ="none";
+ //document.getElementById("service_body").style.display ="none";
+ //document.getElementById("project_body").style.display ="none";
+ //document.getElementById("contact_body").style.display ="none";
 
-//function home(){
-   // document.getElementById("home_body").style.display = "block";
-   // document.getElementById("resume_body").style.display ="none";
-//}
 
-document.getElementById("home_body").style.display = "none";
- document.getElementById("resume_body").style.display ="none";
- document.getElementById("service_body").style.display ="none";
- document.getElementById("project_body").style.display ="none";
+function home(){
+    document.getElementById("home_body").style.display = "block";
+    document.getElementById("resume_body").style.display ="none";
+    document.getElementById("service_body").style.display ="none";
+    document.getElementById("project_body").style.display ="none";
+    document.getElementById("contact_body").style.display ="none";
+}
+
+function resume(){
+  document.getElementById("home_body").style.display = "none";
+  document.getElementById("resume_body").style.display ="block";
+  document.getElementById("service_body").style.display ="none";
+  document.getElementById("project_body").style.display ="none";
+  document.getElementById("contact_body").style.display ="none";
+}
+
+function services(){
+  document.getElementById("home_body").style.display = "none";
+  document.getElementById("resume_body").style.display ="none";
+  document.getElementById("service_body").style.display ="block";
+  document.getElementById("project_body").style.display ="none";
+  document.getElementById("contact_body").style.display ="none";
+}
+
+function project(){
+  document.getElementById("home_body").style.display = "none";
+  document.getElementById("resume_body").style.display ="none";
+  document.getElementById("service_body").style.display ="none";
+  document.getElementById("project_body").style.display ="block";
+  document.getElementById("contact_body").style.display ="none";
+}
+
+function contact(){
+  document.getElementById("home_body").style.display = "none";
+  document.getElementById("resume_body").style.display ="none";
+  document.getElementById("service_body").style.display ="none";
+  document.getElementById("project_body").style.display ="none";
+  document.getElementById("contact_body").style.display ="block";
+}
+
+
+
+
 
 var header = document.getElementById("nav");
 var btns = header.getElementsByClassName("btn");
