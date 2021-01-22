@@ -7,21 +7,20 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  flex-wrap: wrap;
+  
   background-image: url(../img/mainbackground.jpg);
   background-size: cover;
-  height: auto;
+ 
 }
 
 
 
 .header{
-  height: 100px;
+  height: 80px;
   width: 100%;
-  
   display: flex;
   justify-content: center;
-  position: sticky;
+  position: absolute;
 }
 
 .author {
@@ -32,12 +31,12 @@ body {
 }
 
 .clrchange {
-  color: #00cc88;
+  color: #3CB371;
 }
 
 #nav {
   position: absolute;
-  margin-left: 600px;
+  margin-left: 520px;
   top: 20%;
  
 }
@@ -54,14 +53,14 @@ body {
 .btn:hover {
   border-bottom: green solid 3px;
  
+ 
 }
 
 
 .main {
-  width: 1000px;
-  margin-top: 100px;
+  margin-top: 10%;
   position: absolute;
-  top: 10%;
+  width: 992px;
 }
 
 
@@ -79,7 +78,7 @@ body {
 .home_body_top {
   display: flex;
   justify-content: center;
-  background-image: url("../img/background.jfif") ;
+  background-image: url("../img/titlebackground.jfif") ;
   background-size: cover;
   border-radius: 15px 15px 0 0;
   height: 320px;
@@ -95,6 +94,7 @@ body {
   left: 22%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: grey;
+  
 }
 
 .topbody_pic:hover{
@@ -118,9 +118,7 @@ body {
   border-radius: 50%;
   background-color: white;
   padding: 8px;
-  margin-top: 20px;
-  width:"35px";
-  height:"35px";
+  margin-top: 10px;
 }
 
 .icon:hover{
@@ -160,22 +158,23 @@ body {
 
 .linkstyle {
   text-decoration: none;
-  color: #00cc88;
+  color: #3CB371;
 }
 
 #resume_body {
   border:  rgba(0, 0, 0, 0.2) 1px solid;
   border-radius: 15px;
   box-shadow: 0 2px 5px 2px  rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 .resume_title {
-  height: 120px;
+  height: 150px;
   color: white;
   text-align: center;
   border-radius: 15px 15px 0 0;
   font-size: 25px;
-  background-image: url("../img/background.jfif") ;
+  background-image: url("../img/titlebackground.jfif") ;
   background-size: cover;
 }
 
@@ -187,12 +186,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding-left: 50px;
-  background-color: white;
+ 
 }
 
 .resume_info_body {
   flex: 50%;
-  margin-top: 30px;
+  margin: 30px 0 30px 0;
 }
 
 .resume_info_title {
@@ -258,21 +257,21 @@ body {
 .resume_skill_bar2 {
   width: 200px;
   height: 10px;
-  background-color: #00cc88;
+  background-color: #3CB371;
   position: absolute;
 }
 
 .resume_skill_bar3 {
   width: 280px;
   height: 10px;
-  background-color: #00cc88;
+  background-color: #3CB371;
   position: absolute;
 }
 
 .resume_skill_bar4 {
   width: 250px;
   height: 10px;
-  background-color: #00cc88;
+  background-color: #3CB371;
   position: absolute;
 }
 
@@ -428,12 +427,21 @@ body {
 .row input[type=submit]{
   margin-top: 30px;
   padding: 10px;
-  background-color: #00cc88 ;
+  background-color: #3CB371 ;
   color: white;
+  border-color: white;
 }
 
 .footer {
+  position: fixed;
+  bottom: 0;
+  background-color: violet;
+}
+
+
+@media only screen and (min-width: 992px) {
   
-  
-  
+  .main{
+
+  }
 }
