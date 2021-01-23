@@ -10,30 +10,36 @@
       defer
     ></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <script></script>
 
   <body>
     <div class="header">
-      <div class="author">
+      <div class="header_left">
         <span>Jake</span>
         <span class="clrchange">Yang</span>
       </div>
 
+      <div class="header_right">
       <ul id="nav">
         <li class="btn active" onclick="home()">Home</li>
         <li class="btn" onclick="resume()">Resume</li>
         <li class="btn" onclick="services()">Services</li>
         <li class="btn" onclick="project()">Project</li>
         <li class="btn" onclick="contact()">Contact</li>
+        <li href="javascript:void(0);" class="nav_icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </li>
       </ul>
+      </div>
     </div>
 
     <div class="main">
-      <div id="home_body" style="display: block">
+      <div id="home_body">
         <div class="home_body_top">
-          <div style="flex-grow: 4">
+          <div class="home_body_top_left">
             <img
               class="topbody_pic"
               src="img/work.svg"
@@ -44,7 +50,7 @@
             />
           </div>
 
-          <div style="flex-grow: 8" class="home_body_top-info">
+          <div  class="home_body_top_right">
             <h1 class="author_name">Jake Yang</h1>
 
             <h6>Web Developer</h6>
@@ -71,7 +77,7 @@
         </div>
 
         <div class="home_body_bottom">
-          <div class="home_body_bottom_aboutme" style="flex-grow: 6">
+          <div class="home_body_bottom_aboutme">
             <div class="home_body_bottom_title">
               <span>About</span>
               <span class="clrchange">Me</span>
@@ -82,13 +88,13 @@
               ewr ddd wer
             </p>
           </div>
-          <div class="home_body_bottom_detail" style="flex-grow: 2">
+          <div class="home_body_bottom_middle">
             <p>Age</p>
             <p>Address</p>
             <p>E-mail</p>
             <p>Phone</p>
           </div>
-          <div style="flex-grow: 4">
+          <div class="home_body_bottom_right">
             <p>25</p>
             <p>Hawthorn, Melbourne, Vic</p>
 
